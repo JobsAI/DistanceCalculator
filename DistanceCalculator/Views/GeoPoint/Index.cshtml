@@ -1,0 +1,65 @@
+﻿@model IEnumerable<DistanceCalculator.Models.GeoPoint>
+
+@{
+    ViewData["Title"] = "Calculate Distance between two geo points";
+}
+
+    <h4>Calculate Distance between two geo points</h4>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.City1)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Longitude1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude1)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.City2)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Longitude2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude2)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Distance) In Km
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.City1)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Longitude1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude1)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.City2)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Longitude2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude2)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance) km
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
