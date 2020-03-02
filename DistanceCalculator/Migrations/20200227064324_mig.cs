@@ -2,7 +2,7 @@
 
 namespace DistanceCalculator.Migrations
 {
-    public partial class init : Migration
+    public partial class mig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

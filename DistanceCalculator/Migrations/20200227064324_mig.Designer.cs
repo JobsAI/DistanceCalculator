@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DistanceCalculator.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20200226094147_init")]
-    partial class init
+    [Migration("20200227064324_mig")]
+    partial class mig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
